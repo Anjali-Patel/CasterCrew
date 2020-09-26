@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ReviewSubCategoryFragment.ReviewsFragment">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear_continue_watching"
+android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_weight=".5"
+
+            android:textColor="@color/colorLightBlue"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp"
+            android:text="Continue Watching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_weight="1.5"
+
+            android:layout_gravity="end"
+            android:src="@drawable/blue_greater_than"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+
+    <!--<TextView-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textSize="16sp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:text="Continue Watching"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/continue_watching"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/linear_popularaudios"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:textColor="@color/colorLightBlue"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_weight=".5"
+            android:layout_marginLeft="8dp"
+            android:text="Recommended Reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_weight="1.5"
+
+            android:layout_gravity="end"
+            android:src="@drawable/blue_greater_than"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+
+    <!--<TextView-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textSize="16sp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:text="Popular Audios"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/popular_videos"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/linear_spatialaudios"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_weight=".5"
+
+            android:textColor="@color/colorLightBlue"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp"
+            android:text="CC Spatial Reviews "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_weight="1.5"
+
+            android:layout_gravity="end"
+            android:src="@drawable/blue_greater_than"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+    <!--<TextView-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textSize="16sp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:text="CC Spatial Audios "-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cc_spatial_videos"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/linear_allvideos"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_weight=".5"
+
+            android:textColor="@color/colorLightBlue"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp"
+            android:text="All Reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_weight="1.5"
+
+            android:layout_gravity="end"
+            android:src="@drawable/blue_greater_than"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+    <!--<TextView-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textSize="16sp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:text="All Audios"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/all_videos"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+</ScrollView>

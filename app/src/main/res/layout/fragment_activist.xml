@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ActivistFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<LinearLayout-->
+        <!--android:layout_below="@+id/toolbar"-->
+        <!--android:padding="20dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<fr.ganfra.materialspinner.MaterialSpinner-->
+            <!--android:id="@+id/select_cat"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawablePadding="5dp"-->
+            <!--app:ms_hint="Select Category "-->
+            <!--app:ms_enableFloatingLabel="false"-->
+            <!--app:ms_enableErrorLabel="false"-->
+            <!--app:ms_floatingLabelText="floating label"-->
+            <!--app:ms_arrowSize="10dp"-->
+            <!--app:ms_multiline="false"-->
+            <!--app:ms_thickness="0dp"-->
+            <!--android:entries="@array/insti_cat"-->
+            <!--app:ms_alignLabels="false" />-->
+
+        <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:layout_below="@id/role"-->
+            <!--android:id="@+id/a_t"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_title"-->
+                <!--android:hint="Title *"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+        <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:layout_below="@id/a_t"-->
+            <!--android:id="@+id/a_s"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_since"-->
+                <!--android:hint="Since *"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+        <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:id="@+id/a_m"-->
+            <!--android:layout_below="@id/a_s"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_mobile"-->
+                <!--android:hint="Mobile *"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+        <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:id="@+id/s_d"-->
+            <!--android:layout_below="@id/a_m"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_short_des"-->
+                <!--android:hint="Short Description *"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+        <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/lay_out"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_below="@+id/s_d"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<LinearLayout-->
+                <!--android:gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Choose Your Pic"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_pic"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:src="@drawable/men"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"/>-->
+
+
+                <!--<Button-->
+                    <!--android:id="@+id/choose_pic"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:text="Choose Pic"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content">-->
+
+
+                <!--<TextView-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Choose Your Talent Pic"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_talent_pic"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:src="@drawable/men"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/choose_talent_pic"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:text="Choose Pic"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"/>-->
+
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_next"-->
+            <!--android:layout_marginTop="40dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/button_background"-->
+            <!--android:text="Next&ndash;&gt;"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="40dp"/>-->
+    <!--</LinearLayout>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_artist_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      />
+
+</LinearLayout>

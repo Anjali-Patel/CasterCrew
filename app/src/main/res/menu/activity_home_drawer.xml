@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <group   android:checkableBehavior="single" android:id="@+id/g1">
+            <item
+                android:id="@+id/shortlisted_by_me"
+                android:icon="@drawable/red_heart"
+                android:title="Shortlisted By Me" />
+            <item
+                android:id="@+id/daily_recommendations"
+                android:icon="@drawable/recommendation_red"
+                android:title="Daily Recommendations" />
+            <item
+                android:id="@+id/dra_auditions"
+                android:icon="@drawable/audition_icon"
+                android:title="Auditions" />
+            <item
+                android:id="@+id/dra_news"
+                android:icon="@drawable/news_blue"
+                android:title="News" />
+            <item
+                android:id="@+id/shortlisted_me"
+                android:icon="@drawable/orange_heart"
+                android:title="Shortlisted Me" />
+
+        <!--<item-->
+            <!--android:id="@+id/dra_profile"-->
+            <!--android:icon="@drawable/edit_profile"-->
+            <!--android:title="Edit Profile" />-->
+
+
+
+
+        </group>
+    <group  android:checkableBehavior="single" android:id="@+id/g2">
+        <item
+            android:id="@+id/dra_artist"
+            android:icon="@drawable/artist_pallete"
+            android:title="Artist" />
+        <item
+            android:id="@+id/dra_profissional"
+            android:icon="@drawable/professional_icon"
+            android:title="Professionals" />
+
+        <item
+            android:id="@+id/dra_vendors"
+            android:icon="@drawable/vendor_icon"
+            android:title="Vendors" />
+
+        <item
+            android:id="@+id/dra_institute"
+            android:icon="@drawable/education_icon"
+            android:title="Institutions" />
+
+
+    </group>
+    <group  android:checkableBehavior="single" android:id="@+id/g3">
+        <item
+            android:id="@+id/dra_activist"
+            android:icon="@drawable/activist"
+            android:title="Activists" />
+
+        <item
+            android:id="@+id/dra_reviews"
+            android:icon="@drawable/review_icon"
+            android:title="Reviews" />
+
+        <item
+            android:id="@+id/dra_videos"
+            android:icon="@drawable/video"
+            android:title="Videos" />
+        <item
+            android:id="@+id/dra_audios"
+            android:icon="@drawable/audio"
+            android:title="Audios" />
+
+    </group>
+
+    <group  android:checkableBehavior="single" android:id="@+id/g4">
+        <item
+            android:id="@+id/membership_package"
+            android:icon="@drawable/membership_icon"
+            android:title="Membership Packages" />
+
+        <item
+            android:id="@+id/dra_mailbox"
+            android:icon="@drawable/mailbox_blue_icon"
+            android:title="Mailbox" />
+
+
+
+    <item
+        android:id="@+id/dra_notifications"
+        android:icon="@drawable/yellow_notification"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/your_chats"
+        android:icon="@drawable/chat_icon"
+        android:title="Your Chats" />
+    </group>
+    <group android:checkableBehavior="single"  android:id="@+id/g5">
+        <item
+            android:visible="false"
+            android:id="@+id/trust_badges"
+            android:icon="@drawable/trust_badge_icon"
+            android:title="Get Trust Badges" />
+        <item
+            android:id="@+id/success_stories"
+            android:icon="@drawable/success_stories"
+            android:title="Success Stories" />
+        <item
+            android:id="@+id/Personalized_servic"
+            android:icon="@drawable/personalized_services"
+            android:title="Personalized Services" />
+        <item
+            android:id="@+id/safe_castercrew"
+            android:icon="@drawable/vendor_icon"
+            android:title="Safe CasterCrew" />
+
+
+    </group>
+
+    <group android:checkableBehavior="single"  android:id="@+id/g6">
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings_icon"
+            android:title="Settings" />
+        <item
+            android:id="@+id/help_cenetr"
+            android:icon="@drawable/help_icon"
+            android:title="24*7 Help Center " />
+        <item
+            android:id="@+id/privacy_policy"
+            android:icon="@drawable/lock_icon"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/rate_us"
+            android:icon="@drawable/rating_purple"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/quick_tour"
+            android:icon="@drawable/tour_icon"
+            android:title="Quick Tour" />
+
+        <!--<item-->
+        <!--android:id="@+id/help"-->
+        <!--android:icon="@drawable/ic_mail_outline_black_24dp"-->
+        <!--android:title="Help +" />-->
+
+
+    </group>
+    <!--<group   android:id="@+id/g7">-->
+   <!---->
+    <!--</group>-->
+
+
+
+
+
+
+
+            <!--<item-->
+                <!--android:id="@+id/nav_contact"-->
+                <!--android:icon="@drawable/ic_contactus_24dp"-->
+                <!--android:title="ContactUs" />-->
+
+            <item
+                android:checkableBehavior="single"
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_red"
+                android:title="LogOut" />
+
+
+</menu>

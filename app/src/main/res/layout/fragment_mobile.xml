@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MobileFragment">
+
+   <TextView
+       android:textSize="16sp"
+       android:padding="5dp"
+       android:layout_marginTop="40dp"
+       android:textColor="@color/colorBlack"
+       android:textAllCaps="false"
+       android:text="Show mobile number only to:"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <RadioGroup
+          android:id="@+id/radioGroup"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:text="All paid members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb2"
+            android:text="Paid members from my community"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb3"
+            android:text="Paid members whom I contacted/responded to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb4"
+            android:text="Don't show phone number(Hide contact details)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb5"
+            android:text="SecureConnect\nReceived calls from paid\n members without showing my numbers "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+      </RadioGroup>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

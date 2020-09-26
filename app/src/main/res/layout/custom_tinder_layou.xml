@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:elevation="100dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relative_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/userIMG"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/samantha_eleven"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+             android:textAllCaps="false"
+                android:textSize="22sp"
+                        android:id="@+id/tvName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="title"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tvTotalLikes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10K"
+                        android:textColor="#000" />
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/heart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:text="Shortlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:text="Like Her?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/upgrade_subscription"
+                    android:src="@drawable/cross_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp" />
+                <ImageView
+                    android:background="@drawable/button_back"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/correct"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+                </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_gravity="center"
+
+    android:textSize="20sp"
+    android:textColor="@color/colorBlack"
+    android:textAllCaps="false"
+    android:layout_marginTop="30dp"
+    android:text="Choose the document you wish to upload"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center"
+
+        android:id="@+id/driving_license"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:text="Driving License >"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="5dp"
+        android:background="@color/colorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:layout_gravity="center"
+
+        android:id="@+id/pan_card"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:text="PAN Card   >"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="5dp"
+        android:background="@color/colorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:layout_gravity="center"
+
+        android:id="@+id/passport"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:text="Passport   >"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

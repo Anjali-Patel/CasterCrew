@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.OnlineMembersActivity">
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:theme="@style/ToolbarTheme"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorLightBlue"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/back_button"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/ic_arrow_back_black_24dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="35dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="35dp" />&ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/toolbar_title"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:padding="17dp"-->
+                <!--android:text="Online Members"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:textSize="16sp" />-->
+
+
+        <!--</RelativeLayout>-->
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_gravity="center"
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:id="@+id/contacted"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:text="Contacted"
+            android:layout_gravity="center"
+            android:background="@drawable/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/shortlisted"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:text="Shortlisted"
+            android:layout_gravity="center"
+            android:background="@drawable/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NotificationFragment">
+
+<!--&lt;!&ndash;    <androidx.appcompat.widget.Toolbar&ndash;&gt;-->
+<!--&lt;!&ndash;        xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/toolbar"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:theme="@style/ToolbarTheme"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="?actionBarSize"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:minHeight="?attr/actionBarSize"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:background="@drawable/app_gradient"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:contentInsetLeft="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:contentInsetStart="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:contentInsetStartWithNavigation="0dp">&ndash;&gt;-->
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            >-->
+<!--            &lt;!&ndash;<ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;android:id="@+id/back_button"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:src="@drawable/ic_arrow_back_black_24dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:layout_width="35dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;android:layout_height="35dp" />&ndash;&gt;-->
+
+<!--            <TextView-->
+
+<!--                android:id="@+id/toolbar_title"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:padding="17dp"-->
+<!--                android:text="NOTIFICATIONS"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:textSize="16sp" />-->
+
+
+<!--        </RelativeLayout>-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notificationList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>

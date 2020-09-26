@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.OtherServicesQueriesActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorLightBlue"
+        app:popupTheme="@style/AppTheme.NoActionBar" >
+
+    </androidx.appcompat.widget.Toolbar>    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="What is castercrew.com?"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="What are the various sites that come under CasterCrew"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="What are other services/products provided by CasterCrew?"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Is CommunityCasterCrew a part of castercrew.com?"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="I 've found my match on CasterCrew.What next?"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Do I get to choose my CasterCrewID?"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

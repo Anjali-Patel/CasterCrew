@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.RecommendedActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:text="Mumbai:'When locals run again,61% of commuters will avoid them for 3 months'"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_pic"
+
+                    android:src="@drawable/samantha_eleven"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <LinearLayout
+                      android:id="@+id/title"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:text="NewsTrack Live"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:padding="5dp"
+
+                        android:layout_marginLeft="10dp"
+                        android:textSize="10sp"
+                        android:textAllCaps="false"
+                        android:text="Author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Button
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary"
+                    android:text="+FOLLOW"
+                    android:textSize="16sp"
+                    android:id="@+id/uid"
+                    android:textColor="#fff"/>
+
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:src="@drawable/chennel"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:text="A white paper has been released by the State Council information Office on Sunday that sait China used Traditional Chinese medicine(TCM)to cure 92 percent of their coronavirus cases across the country. "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/samantha_profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:text="samanthaaruthprab..."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="10sp"
+                        android:textAllCaps="false"
+                        android:text="10.1m followers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/view_profile"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/blue_border_stroke"
+                    android:text="View Profile"
+                    android:textSize="14sp"
+                    android:textColor="#fff"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/like"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_like"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:text="14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/dislike"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_dislike"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/whatsapp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/whatsapp_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/facebook"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/facebook"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <ImageView
+                    android:id="@+id/share"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/share_blue"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <ImageView
+                    android:id="@+id/comment"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/comment_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+
+            </LinearLayout>
+            <!--<LinearLayout-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<View-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="1dp"/>-->
+
+            <!--<View-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="1dp"/>-->
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:textStyle="italic"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:text="RECOMMENDED ARTICLES"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/t11"
+                    android:text="India to make 1 billion doses of \nCorona vaccine ,agreement with this \ndrug company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/img11"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/chennel"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp" />
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/t11"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/t21"
+                    android:text="NewsTrack Live \t\t\t 1m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/t12"
+                    android:text="India to make 1 billion doses of \nCorona vaccine ,agreement with this \ndrug company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/img12"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/media"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp" />
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/t12"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/t22"
+                    android:text="NewsTrack Live "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!--<ImageView-->
+                <!--android:layout_toRightOf="@+id/t22"-->
+                <!--android:id="@+id/img14"-->
+                <!--android:src="@drawable/live_chat"-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp" />-->
+            </RelativeLayout>
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:id="@+id/relative4"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/t13"
+                    android:text="India to make 1 billion doses of Corona\n vaccine ,agreement with this \ndrug company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/img13"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/chennel"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp" />
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/t13"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/t23"
+                    android:text="NewsTrack Live \t\t\t 1m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+<TextView
+    android:layout_marginTop="15dp"
+    android:textSize="16sp"
+    android:textColor="@color/colorBlack"
+    android:textAllCaps="true"
+    android:layout_gravity="center"
+    android:text="LATEST COMMENTS"
+    android:textStyle="italic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:padding="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/samantha_six"
+                            android:layout_height="70dp" />
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+                            <TextView
+                                android:textAllCaps="false"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_gravity="center"
+                                android:padding="10dp"
+                                android:hint="Ishani looking preety didu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:textAllCaps="false"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2d \t\t 1 Like \t\t Reply"
+                                android:textSize="16sp" />
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:padding="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/samantha_six"
+                            android:layout_height="70dp" />
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+                            <TextView
+                                android:textAllCaps="false"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_gravity="center"
+                                android:padding="10dp"
+                                android:hint="Ishani looking preety didu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:textAllCaps="false"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2d \t\t 1 Like \t\t Reply"
+                                android:textSize="16sp" />
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:padding="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/samantha_six"
+                            android:layout_height="70dp" />
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+                            <TextView
+                                android:textAllCaps="false"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_gravity="center"
+                                android:padding="10dp"
+                                android:hint="Ishani looking preety didu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:textAllCaps="false"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2d \t\t 1 Like \t\t Reply"
+                                android:textSize="16sp" />
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:padding="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/samantha_six"
+                            android:layout_height="70dp" />
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+                            <TextView
+                                android:textAllCaps="false"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_gravity="center"
+                                android:padding="10dp"
+                                android:hint="Ishani looking preety didu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:textAllCaps="false"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2d \t\t 1 Like \t\t Reply"
+                                android:textSize="16sp" />
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:padding="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/samantha_six"
+                            android:layout_height="70dp" />
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+                            <TextView
+                                android:textAllCaps="false"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_gravity="center"
+                                android:padding="10dp"
+                                android:hint="Ishani looking preety didu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:textAllCaps="false"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2d \t\t 1 Like \t\t Reply"
+                                android:textSize="16sp" />
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:padding="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/samantha_six"
+                            android:layout_height="70dp" />
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+                            <TextView
+                                android:textAllCaps="false"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_gravity="center"
+                                android:padding="10dp"
+                                android:hint="Ishani looking preety didu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:textAllCaps="false"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2d \t\t 1 Like \t\t Reply"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:padding="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/samantha_six"
+                            android:layout_height="70dp" />
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+                            <TextView
+                                android:textAllCaps="false"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_gravity="center"
+                                android:padding="10dp"
+                                android:hint="Ishani looking preety didu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:textAllCaps="false"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2d \t\t 1 Like \t\t Reply"
+                                android:textSize="16sp" />
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:padding="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/samantha_six"
+                            android:layout_height="70dp" />
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+                            <TextView
+                                android:textAllCaps="false"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_gravity="center"
+                                android:padding="10dp"
+                                android:hint="Ishani looking preety didu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:textAllCaps="false"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2d \t\t 1 Like \t\t Reply"
+                                android:textSize="16sp" />
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+<!--
+            <LinearLayout
+                android:id="@+id/relative5"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/samantha_profile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="14sp"
+                        android:text="Stalin"
+                        android:textAllCaps="false"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textAllCaps="false"
+
+                        android:textSize="12sp"
+                        android:text="23 h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textAllCaps="false"
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:text="Samantha Yrr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+              <LinearLayout
+                  android:layout_marginLeft="10dp"
+                  android:layout_gravity="center"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <TextView
+                      android:layout_gravity="center"
+                      android:layout_marginLeft="5dp"
+
+                      android:textSize="14sp"
+                      android:text="0"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+                  <ImageView
+                      android:layout_gravity="center"
+                      android:layout_marginLeft="5dp"
+                      android:src="@drawable/ic_like"
+                      android:layout_width="15dp"
+                      android:layout_height="15dp" />
+                  <TextView
+                      android:layout_gravity="center"
+                      android:layout_marginLeft="5dp"
+
+                      android:textSize="14sp"
+                      android:text="0"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+                  <ImageView
+                      android:layout_gravity="center"
+                      android:layout_marginLeft="5dp"
+
+                      android:src="@drawable/comment_icon"
+                      android:layout_width="15dp"
+                      android:layout_height="15dp" />
+
+              </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/samantha_profile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textAllCaps="false"
+
+                        android:textSize="14sp"
+                        android:text="Stalin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textAllCaps="false"
+
+                        android:textSize="12sp"
+                        android:text="23 h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:text="Samantha Yrr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_gravity="center"
+
+                            android:layout_marginLeft="5dp"
+                        android:textSize="14sp"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+
+                        android:src="@drawable/ic_like"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+
+                        android:textSize="14sp"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+
+                        android:src="@drawable/comment_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

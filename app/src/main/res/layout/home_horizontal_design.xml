@@ -1,0 +1,56 @@
+<androidx.cardview.widget.CardView
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+android:layout_marginLeft="15dp"
+    app:cardCornerRadius="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    android:gravity="center"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/hr_image"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/men"
+        app:sriv_border_color="#1b8edc"
+        app:sriv_border_width="1dp"
+        app:sriv_left_bottom_corner_radius="16dp"
+        app:sriv_left_top_corner_radius="16dp"
+        app:sriv_right_bottom_corner_radius="16dip"
+        app:sriv_right_top_corner_radius="16dp" />
+    <ImageView
+        android:src="@drawable/red_dot"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/iv_image"
+        android:layout_alignParentTop="true"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+</RelativeLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/hr_name"
+        android:gravity="center"
+        android:text="Aravind"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+
+
+            <TextView
+                android:paddingStart="5dp"
+                android:paddingEnd="15dp"
+                android:id="@+id/member_ship"
+                android:textSize="10sp"
+                android:textColor="@color/colorIndigo"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Verified"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/crown"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="10dp" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_image"
+                android:src="@drawable/men"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                app:sriv_border_color="#1b8edc"
+                app:sriv_border_width="1dp"
+                />
+            <TextView
+                android:layout_toEndOf="@+id/member_ship"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPurple"
+                android:text="Mutual"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:id="@+id/verified"
+                android:layout_marginTop="3dp"
+                android:drawableStart="@drawable/ic_done_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+
+
+            <TextView
+                android:paddingStart="5dp"
+
+                android:singleLine="true"
+                android:textColor="#000"
+                android:id="@+id/name"
+                android:textSize="15sp"
+                android:text="Sumit Kumar"
+                android:textStyle="bold"
+                android:layout_below="@+id/member_ship"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:paddingStart="5dp"
+                android:id="@+id/designation"
+                android:layout_below="@+id/name"
+                android:textSize="11sp"
+                android:text="H7267603,Kurmi,Kayastha,Supervisor,30lakh"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:visibility="visible"
+                android:textStyle="italic"
+                android:id="@+id/talent_title"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/designation"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:text="Interest Received"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/talent_title"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:text="You have declined his interest as \nyour preferences dont match his profile"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/message"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+
+            android:id="@+id/layoutt"
+            android:gravity="center"
+            android:layout_below="@+id/relative"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_back"
+                android:id="@+id/no"
+                android:text="No"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+
+            <Button
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:text="Yes"
+                android:background="@drawable/upgrade_subscription"
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_height="40dp"/>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PendingFragment">
+
+  <TextView
+      android:padding="5dp"
+      android:textAllCaps="false"
+      android:textColor="@color/colorBlack"
+      android:textSize="18sp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="15dp"
+      android:text=" Members Await Your \nResponse"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+         android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginLeft="10dp"
+
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_back"
+                android:text="Matching My Preferences"
+                android:id="@+id/matching_my_preferences"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_marginLeft="10dp"
+                 android:id="@+id/premium"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_back"
+                android:text="Premium"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_marginLeft="10dp"
+
+                android:padding="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentEnd="true"
+                android:textAllCaps="false"
+                android:background="@drawable/button_back"
+                android:text="Mutual"
+                android:id="@+id/mutual"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>

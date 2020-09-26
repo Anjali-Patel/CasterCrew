@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/men"
+            android:layout_height="70dp"/>
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:text="To chat with R Kumar,\n upgrade membership "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#E5E8E8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:layout_gravity="start"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Benefits of Upgrading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<!--    <LinearLayout-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <ImageView-->
+<!--            android:src="@drawable/call_icon"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"/>-->
+<!--        <TextView-->
+<!--            android:textSize="18sp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:text="+91 9583XXXXXX"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </LinearLayout>-->
+
+
+    <TextView
+        android:layout_gravity="start"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="* View contact number of matches "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="* Chat with matches online "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="* Send unlimited personalised messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="* View and match talents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+
+            android:id="@+id/close"
+            android:textSize="16sp"
+            android:text="Close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOrange"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="end"
+            android:id="@+id/upgrade"
+            android:textSize="16sp"
+            android:text="Upgrade Now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginBottom="20dp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.NewsDetailActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorLightBlue"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <!--<TextView-->
+        <!--android:id="@+id/toolbar_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:padding="17dp"-->
+        <!--android:text="24*7 HELP CENTER"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:textSize="16sp" />-->
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_gravity="center"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/profile_pic"
+            android:src="@drawable/samantha_eleven"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <LinearLayout
+           android:id="@+id/title"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:text="timesofindia.indiatimes.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/designation"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:text="Author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/date"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:text="Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="+FOLLOW"
+            android:textSize="16sp"
+            android:id="@+id/uid"
+            android:textColor="#fff"/>
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/edit"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:text="Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginLeft="10dp"
+        android:id="@+id/save"
+        android:text="Save"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginLeft="10dp"
+
+
+        android:id="@+id/delete"
+        android:text="Delete"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+            <EditText
+                android:focusable="false"
+                android:background="@null"
+                android:id="@+id/news_title"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:text="Mumbai:'When locals run again,61% of commuters will avoid them for 3 months'"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+<!--            <com.google.android.youtube.player.YouTubePlayerView-->
+<!--                android:id="@+id/youtube_view"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+    <ImageView
+
+        android:id="@+id/news_image"
+        android:src="@drawable/three_samantha"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:background="@null"
+
+        android:focusable="false"
+        android:id="@+id/news_description"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:text="A white paper has been released by the State Council information Office on Sunday that sait China used Traditional Chinese medicine(TCM)to cure 92 percent of their coronavirus cases across the country. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/like"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_like"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:text="14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_gravity="center"
+                     android:id="@+id/dislike"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_dislike"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/whatsapp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/whatsapp_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <ImageView
+                    android:layout_gravity="center"
+                   android:id="@+id/facebook"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/facebook"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <ImageView
+                    android:id="@+id/share"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/share_blue"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <ImageView
+                    android:id="@+id/comment"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/comment_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+
+            </LinearLayout>
+<!--<LinearLayout-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<View-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="1dp"/>-->
+
+    <!--<View-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="1dp"/>-->
+<!--</LinearLayout>-->
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="@color/colorBlack"
+                android:text="RECOMMENDED ARTICLES"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/t11"
+                    android:text="India to make 1 billion doses of \nCorona vaccine ,agreement with this \ndrug company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/img11"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/chennel"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp" />
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/t11"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/t21"
+                    android:text="NewsTrack Live \t\t\t 1m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/t12"
+                    android:text="India to make 1 billion doses of \nCorona vaccine ,agreement with this \ndrug company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/img12"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/media"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp" />
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/t12"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/t22"
+                    android:text="NewsTrack Live "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!--<ImageView-->
+                <!--android:layout_toRightOf="@+id/t22"-->
+                <!--android:id="@+id/img14"-->
+                <!--android:src="@drawable/live_chat"-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp" />-->
+            </RelativeLayout>
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:id="@+id/relative4"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/t13"
+                    android:text="India to make 1 billion doses of Corona\n vaccine ,agreement with this \ndrug company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/img13"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/chennel"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp" />
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/t13"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/t23"
+                    android:text="NewsTrack Live \t\t\t 1m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+</ScrollView>
+</LinearLayout>

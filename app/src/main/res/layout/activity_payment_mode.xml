@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.PaymentModeActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorLightBlue"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="17dp"
+            android:text="PAYMENT MODE"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+    </androidx.appcompat.widget.Toolbar>
+<!--        <TextView-->
+<!--            android:id="@+id/t1"-->
+<!--            android:text="Classic-3 Months"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+        <LinearLayout
+            android:background="#d3d3d3"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:text="Classic -3 Months"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_gravity="end"
+                android:text="Rs. 3700"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:checked="true"
+                android:layout_weight="1"
+                android:text="Activate profile Highlighter ?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="12sp"
+                android:layout_gravity="end"
+                android:text="Rs. 349"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGrey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:text="You have to pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_gravity="end"
+                android:text="Rs. 4049"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/expandableButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_weight="1"
+                            android:src="@drawable/credit_card"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"
+                            android:text="Credit/Debit Card"
+                            android:textAllCaps="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_gravity="end"
+                            android:id="@+id/img1"
+                            android:src="@drawable/ic_expand_more_black_24dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+                    </LinearLayout>
+
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                        android:id="@+id/expandableLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="20dp"
+                        app:ael_duration="400"
+                        app:ael_expanded="false"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:ael_interpolator="linear"
+                        app:ael_orientation="vertical">
+                        <LinearLayout
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/TextInputLayout1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true">
+
+                                <EditText
+                                    android:id="@+id/userid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Card Number"
+                                    android:paddingLeft="1dp"
+                                    android:inputType="number"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true">
+                                <EditText
+                                    android:focusable="false"
+
+                                    android:id="@+id/expiry_month"
+                                    android:hint="Expiry Month >"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true">
+                                <EditText
+                                    android:focusable="false"
+                                    android:id="@+id/expiry_year"
+                                    android:hint="Expiry Year >"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/TextInputLayout2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true">
+
+                                <EditText
+                                    android:id="@+id/password"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="CVV"
+                                    android:inputType="number"
+                                    android:paddingLeft="1dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerHorizontal="true"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <TextView
+                                android:textAllCaps="false"
+                                android:textSize="10sp"
+                                android:text="CVV number is found mostly on the back of your card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <Button
+                                android:layout_marginTop="5dp"
+
+                                android:text="PAY NOW"
+                                android:textColor="@color/colorWhite"
+                                android:textAllCaps="true"
+                                android:background="@drawable/upgrade_subscription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                 android:layout_marginBottom="10dp"
+                                android:textSize="10sp"
+                                android:text="It is absolutely secure to make  a payment with us"
+                                android:textAllCaps="false"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/expandableButton2"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_weight="1"
+                            android:src="@drawable/net_banking"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"
+                            android:text="Net Banking"
+                            android:textAllCaps="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_gravity="end"
+                            android:id="@+id/img2"
+                            android:src="@drawable/ic_expand_more_black_24dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+                    </LinearLayout>
+
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                        android:id="@+id/expandableLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="20dp"
+                        app:ael_duration="400"
+                        app:ael_expanded="false"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:ael_interpolator="linear"
+                        app:ael_orientation="vertical">
+                        <LinearLayout
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                         <TextView
+                             android:text="For faster &amp; simple payments,use credit/debit card.Why?"
+                             android:textSize="10sp"
+                             android:textAllCaps="false"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:text="SELECT FROM POPULAR BANKS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_weight="1"
+                                    android:src="@drawable/sbi_icon"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"/>
+                                <ImageView
+                                    android:src="@drawable/hdfc_icon"
+                                    android:layout_weight="1"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"/>
+                                <ImageView
+                                    android:src="@drawable/icici_icon"
+                                    android:layout_weight="1"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"/>
+                                <ImageView
+                                    android:src="@drawable/axis_icon"
+                                    android:layout_weight="1"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"/>
+                            </LinearLayout>
+                            <TextView
+                                android:layout_marginTop="2dp"
+                                android:text="OR"
+                                android:textSize="16sp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:background="@null"
+                                android:text="Select Bank"
+                                android:layout_marginTop="5dp"
+                                android:textAllCaps="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <Button
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="PAY NOW"
+                                android:layout_marginTop="5dp"
+                                android:textAllCaps="true"
+                                android:background="@drawable/upgrade_subscription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="10sp"
+                                android:text="Note: please be ready  with your user id and Password"
+                                android:textAllCaps="false"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:visibility="gone"
+                                android:textSize="10sp"
+                                android:text="It is absolutely secure to make a payment with us"
+                                android:textAllCaps="false"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/expandableButton3"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/doorstep_collection"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"
+                            android:text="Doorstep Collection"
+                            android:textAllCaps="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_gravity="end"
+                            android:layout_weight="1"
+
+                            android:id="@+id/img3"
+                            android:src="@drawable/ic_expand_more_black_24dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+                    </LinearLayout>
+
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                        android:id="@+id/expandableLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="20dp"
+                        app:ael_duration="400"
+                        app:ael_expanded="false"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:ael_interpolator="linear"
+                        app:ael_orientation="vertical">
+                        <LinearLayout
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                          <TextView
+                              android:text="Doorstep Collection"
+                              android:textStyle="bold"
+                              android:textColor="@color/colorBlack"
+
+                              android:textAllCaps="false"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textColor="@color/colorBlack"
+                                    android:layout_marginTop="10dp"
+                                android:textSize="12sp"
+                                android:text="(Applicable only for Indian Residents)"
+                                android:textStyle="bold"
+                                android:textAllCaps="false"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/colorBlack"
+                                android:text="Fill the form below &amp; our representative will come to collect your payment."
+                                android:textAllCaps="false"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <EditText
+                                android:layout_marginTop="5dp"
+                                android:padding="5dp"
+                                android:hint="Building Name/Flat Number"
+                                android:background="@drawable/border_stroke"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"/>
+                            <EditText
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/border_stroke"
+                                android:hint="Street/Locality/City"
+                                  android:padding="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"/>
+                            <TextView
+                                android:text="WE ACCEPT: Cash ,Cards,Cheque,DD"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <Button
+                                android:padding="5dp"
+                                android:background="@drawable/upgrade_subscription"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorWhite"
+                                android:text="CONFIRM "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+
+            android:layout_marginTop="10dp"
+            android:id="@+id/neft_rtgs"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/pay_atbank_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:text="NEFT/RTGS/Pay at Bank"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_weight="1"
+
+                android:layout_gravity="end"
+                android:id="@+id/img4"
+                android:src="@drawable/ic_expand_more_black_24dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="30dp"
+            android:background="@color/colorGrey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/pay_atBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/home"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:text="Pay at Branch"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/img5"
+                android:src="@drawable/ic_expand_more_black_24dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="30dp"
+            android:background="@color/colorGrey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+       android:layout_marginTop="10dp"
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+          >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="NEED HELP WITH\n PAYMENTS?"
+                android:textSize="12sp" />
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/call_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="9490009305"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/chat_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="CHAT NOW"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

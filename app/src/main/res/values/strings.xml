@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">CasterCrew</string>
+
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_title">VVVInfo Tech</string>
+    <string name="Client_ID">267682751320-41ccrvhuef4auvh3f7jttrb4p2o4caaj.apps.googleusercontent.com</string>
+    <string name="Client_Secret">Mw_jaVagVA_L_ci9_4cpOaRM</string>
+    <string name="nav_header_subtitle">vvvinfotech@android.com</string>
+
+    <!--    <string name="fb_login_protocol_scheme">fb204127990172423</string>-->
+    <!--    <string name="facebook_app_id">894882580618030</string>-->
+    <string name="Upgrading_Now">Chat with him by  <a href="Upgrading Now">Upgrading Now</a></string>
+    <string name="call">Call <a href="Upgrading Now">9490009305</a> for any query</string>
+    If you still wish to delete your profile,click here
+    <string name="delete_profile_click"> If you still wish to delete your profile, <a href="click here">click here</a> </string>
+
+    <string name="click_here"> <a href="Click Here">Click Here</a> to view our Privacy Policy</string>
+    <string name="facebook_app_id">1003779799999601</string>
+    <string name="fb_login_protocol_scheme">fb1003779799999601</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="image_description">image description</string>
+    <string name="toast_image_description">Toast image description</string>
+    <string name="error_already_register">mobile numbe ralready register</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="Role">Role</string>
+    <string name="designation">Designation</string>
+    <string name="doj">DOJ</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="edu_cat">
+        <item>Select Role</item>
+
+        <item>Individual</item>
+        <item>Recruiter</item>
+        <item>Vendor </item>
+        <item>Institute</item>
+        <item>Activist</item>
+    </string-array>
+
+    <string-array name="payment_opptions">
+        <item>Silver - 500</item>
+        <item>Gold - 1000</item>
+        <item>Platinum - 1500</item>
+        <item>Dimond - 2000</item>
+
+    </string-array>
+    <string-array name="state">
+        <item>Mahaerashtra</item>
+        <item>Uttar Pradesh</item>
+        <item>Telengana</item>
+        <item>Andhra Pradesh</item>
+        <item>Gujrat</item>
+        <item>West Bengal</item>
+        <item>Punjab</item>
+        <item>Delhi</item>
+        <item>Assam</item>
+    </string-array>
+    <string-array name="start_cast">
+        <item>Director</item>
+        <item>Music Director</item>
+        <item>Actors</item>
+        <item>Assistants</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="city">
+        <item>Lucknow</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Hyderabad</item>
+        <item>Vishakhapattnam</item>
+        <item>Kolkata</item>
+        <item>Pune</item>
+        <item>Kanpur</item>
+        <item>Allahabad</item>
+        <item>Varanasi</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="category_list">
+        <item>Select Category</item>
+        <item>Artist</item>
+        <item>Professionals</item>
+        <item>Vendors</item>
+        <item>Institutions</item>
+        <item>Activist</item>
+        <item>Videos</item>
+        <item>Audios</item>
+        <item>Reviews</item>
+        <item>Auditions</item>
+
+    </string-array>
+    <string-array name="insti_cat">
+        <item>Acting Training</item>
+        <item>Filim Making</item>
+        <item>Beautician And Saloon Training</item>
+        <item>Costamology Training</item>
+        <item>Singing</item>
+        <item>Editing</item>
+        <item>Dubbing</item>
+        <item>Animations</item>
+        <item>Music Academy</item>
+        <item>Photography School</item>
+        <item>Videography School</item>
+        <item>3-D Animation ans Graphics Institute</item>
+        <item>Software Design and Development Institute</item>
+        <item>Other Coaching Centers</item>
+
+    </string-array>
+
+
+</resources>

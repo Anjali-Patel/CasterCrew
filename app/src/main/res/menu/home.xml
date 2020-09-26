@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:icon="@drawable/filter"
+        android:id="@+id/action_refresh"
+        android:title="Refresh"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:icon="@drawable/filter"
+        android:id="@+id/action_filter"
+        android:title="Filter"
+        app:showAsAction="never" >
+
+        <menu>
+            <item
+                android:id="@+id/action_artist"
+                android:title="Artist"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_profissional"
+                android:title="Profissional"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/action_vender"
+                android:title="Vender"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/action_inistitute"
+                android:title="Institute"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/action_activist"
+                android:title="Activists"
+                app:showAsAction="never"/>
+
+        </menu>
+    </item>
+    <!--<item-->
+        <!--android:id="@+id/action_settings"-->
+        <!--android:title="Settings"-->
+        <!--app:showAsAction="never" />-->
+    <!--<item-->
+        <!--android:id="@+id/action_logout"-->
+        <!--android:title="Log Out"-->
+        <!--app:showAsAction="never" />-->
+</menu>

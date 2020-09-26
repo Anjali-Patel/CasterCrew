@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+        android:id="@+id/nav_home"
+        android:icon="@drawable/white_home"
+        android:title="Home" />
+
+    <item
+
+        android:id="@+id/nav_videos"
+        android:icon="@drawable/white_video"
+        android:title="Videos" />
+
+<!--    <item-->
+<!--        android:id="@+id/nav_activist"-->
+<!--        android:icon="@drawable/activist"-->
+<!--        android:title="Activist" />-->
+
+    <item
+
+
+        android:id="@+id/nav_audios"
+        android:icon="@drawable/white_audio"
+        android:title="Audios" />
+
+
+<!--    <item-->
+<!--        android:id="@+id/nav_upload"-->
+<!--        android:icon="@drawable/ic_file_upload_black_24dp"-->
+<!--        android:title="UpLoad" />-->
+
+
+<!--    <item-->
+<!--        android:id="@+id/nav_contact"-->
+<!--        android:icon="@drawable/ic_contactus_24dp"-->
+<!--        android:title="ContactUs" />-->
+
+    <item
+
+        android:id="@+id/dra_reviews"
+        android:icon="@drawable/white_review"
+        android:title="Reviews" />
+    <item
+
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/white_notification"
+        android:title="Notification" />
+
+
+</menu>

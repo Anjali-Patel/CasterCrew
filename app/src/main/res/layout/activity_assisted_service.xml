@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.AssistedServiceActivity">
+    <!--<androidx.appcompat.widget.Toolbar-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:theme="@style/ToolbarTheme"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?actionBarSize"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:background="@drawable/app_gradient"-->
+        <!--app:contentInsetLeft="0dp"-->
+        <!--app:contentInsetStart="0dp"-->
+        <!--app:contentInsetStartWithNavigation="0dp">-->
+
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/back_button"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/ic_arrow_back_black_24dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="35dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="35dp" />&ndash;&gt;-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/toolbar_title"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:padding="17dp"-->
+                <!--android:text="Assisted Service"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:textSize="16sp" />-->
+            <!--<TextView-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/enable_all"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="end"-->
+                <!--android:padding="17dp"-->
+                <!--android:text="Enable All"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:textSize="14sp" />-->
+
+        <!--</RelativeLayout>-->
+    <!--</androidx.appcompat.widget.Toolbar>-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorLightBlue"
+        app:popupTheme="@style/AppTheme.NoActionBar" >
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:background="@drawable/viewpagerbackground"
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+      >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+    <!--<androidx.viewpager.widget.ViewPager-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"></androidx.viewpager.widget.ViewPager>-->
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="false"
+        android:text="Your Personal  Manager will take the responsibility of finding the right match for you by "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/orange_heart"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:text="Representing you to matches on your behalf. "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="10dp"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+
+            android:src="@drawable/orange_heart"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:text="Organizing meetings with mutually interested prospectus."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+
+            android:src="@drawable/orange_heart"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:text="Using expert tools to search &amp; shortlist profiles for you."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+<Button
+    android:id="@+id/click_call"
+    android:textSize="16sp"
+    android:padding="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/colorWhite"
+    android:textAllCaps="false"
+    android:background="@drawable/upgrade_subscription"
+    android:text="Click to call for your free consultation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center"
+      android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:text="Assisted Service toll Free:9490009305 "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

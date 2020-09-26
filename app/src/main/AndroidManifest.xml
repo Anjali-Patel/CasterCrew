@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.castercrewapp.castercrew">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logopic"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/app_logopic"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activitys.SubscriptionDetailActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"></activity>
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <activity
+            android:name=".Activitys.DeleteAccountActivity"
+            android:parentActivityName=".Activitys.AccountActivity"
+            android:screenOrientation="portrait" /> <!-- <provider -->
+        <!-- android:name="androidx.core.content.FileProvider" -->
+        <!-- android:authorities="${applicationId}.provider" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@xml/provider_paths" /> -->
+        <!-- </provider> -->
+        <activity
+            android:name=".Activitys.ChangePasswordActivity"
+            android:parentActivityName=".Activitys.AccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.AuditionSliderPhotoActivity"
+            android:parentActivityName=".Activitys.AuditionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.VideoPostDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.AudioPostDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.AuditionPostDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ReviewsPostDetailactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.FeedActivity"
+            android:parentActivityName=".Activitys.ActivistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.AuditionPostActivity"
+            android:parentActivityName=".Activitys.ActivistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.NewsPostActivity"
+            android:parentActivityName=".Activitys.ActivistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.AuditionAllActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.AuditionDetailActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.FraudnessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ReportProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.HelpcenetrBranchLocatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.HelpCenterChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.HelpCenterFeedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.OtherServicesQueriesActivity"
+            android:parentActivityName=".Activitys.HelpCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.SearchQueriesActivity"
+            android:parentActivityName=".Activitys.HelpCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ContactMatchesQueriesActivity"
+            android:parentActivityName=".Activitys.HelpCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.MemebershipQueriesActivity"
+            android:parentActivityName=".Activitys.HelpCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ProfileQueriesActivity"
+            android:parentActivityName=".Activitys.HelpCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.FAQsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.QuickTourActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.HelpCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.SafeCasterCrewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.AssistedServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.DailyRecommendedActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.SuccessStoriesActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.GetTrustedBadgesActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.IgnoredProfilesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.BlockedProfilesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.CallPreferencesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ViewAndContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.OnlineMembersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.MoreAlertsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.AdvancedSettingActivity"
+            android:parentActivityName=".Activitys.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.AccountActivity"
+            android:parentActivityName=".Activitys.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.PrivacySettingsActivity"
+            android:parentActivityName=".Activitys.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.MyChatsActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.SettingsActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.VisitedProfileActivity"
+            android:parentActivityName=".Activitys.DetailspageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.AlsoVisitedActivity"
+            android:parentActivityName=".Activitys.DetailspageActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activitys.ReviewsAllVideolActivity" />
+        <activity android:name=".Activitys.NewsPosterResultActivity" />
+        <activity
+            android:name=".Activitys.CommentActivity"
+            android:parentActivityName=".Activitys.NewsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activitys.RecommendedActivity" />
+        <activity
+            android:name=".Activitys.NewsDetailActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ContinueWatchingActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.StarCastActivity"
+            android:parentActivityName=".Activitys.Play_Video_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.InviteActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activitys.Silver_GoldMembeshipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.SocialWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ChatActivity"
+            android:parentActivityName=".Activitys.DetailspageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.MembershipPackage"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.PaymentModeActivity"
+            android:parentActivityName=".Activitys.MembershipPackage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.EditProfileActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activitys.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ActressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ActorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.CoachingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ShortlistedMeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ViewedmyprofileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.TalentPostListActivity"
+            android:parentActivityName=".Activitys.ActivistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.DetailspageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ReviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ArtistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.PaymentActivity"
+            android:parentActivityName=".Activitys.PaymentModeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.Profissional_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.NotificationActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.InstituteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.VendorsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ProfissionalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ActivistActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activitys.AudioActivity" />
+        <activity
+            android:name=".Activitys.ProfileActivity"
+            android:parentActivityName=".Activitys.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activitys.VideosActivity" />
+        <activity android:name=".Activitys.Play_Video_Activity" />
+        <activity
+            android:name=".Activitys.OTPVerfication"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.Forgot_Password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.OTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.RegistationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.SplashActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_vvoOs9BBgOVndU"/>
+        <service android:name=".utils.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+</manifest>

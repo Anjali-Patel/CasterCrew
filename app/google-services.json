@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "7228563517",
+    "firebase_url": "https://castercrew-71a68.firebaseio.com",
+    "project_id": "castercrew-71a68",
+    "storage_bucket": "castercrew-71a68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7228563517:android:b08ef261d6b1443f338a54",
+        "android_client_info": {
+          "package_name": "com.castercrewapp.castercrew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7228563517-788nq0a3mtake6sdobl9sv27tl0cfedv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.castercrewapp.castercrew",
+            "certificate_hash": "a18e5914afa5b8ea7663ef57173a261046f00a5e"
+          }
+        },
+        {
+          "client_id": "7228563517-m5or8oqncpr019s98vn3rvt4o8p6ln54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1XaD88U6a4lyUOnLopkXvyG7SuMaHkwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7228563517-m5or8oqncpr019s98vn3rvt4o8p6ln54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

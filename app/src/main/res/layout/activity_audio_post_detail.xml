@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.AudioPostDetailActivity">
+    <!--<androidx.appcompat.widget.Toolbar-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:theme="@style/ToolbarTheme"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?actionBarSize"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:background="@drawable/app_gradient"-->
+        <!--app:contentInsetLeft="0dp"-->
+        <!--app:contentInsetStart="0dp"-->
+        <!--app:contentInsetStartWithNavigation="0dp">-->
+
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/toolbar_title"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:padding="17dp"-->
+                <!--android:text="Audio"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:textSize="16sp" />-->
+            <!--<TextView-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/enable_all"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="end"-->
+                <!--android:padding="17dp"-->
+                <!--android:text="Talent Post"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:textSize="14sp" />-->
+
+        <!--</RelativeLayout>-->
+    <!--</androidx.appcompat.widget.Toolbar>-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorLightBlue"
+        app:popupTheme="@style/AppTheme.NoActionBar" >
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textAllCaps="false"
+            android:id="@+id/title"
+            android:hint="Post Title *"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textAllCaps="false"
+            android:id="@+id/description"
+            android:hint="description *"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:textSize="8sp"
+            android:text="0/150"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+<LinearLayout
+    android:layout_gravity="center"
+    android:id="@+id/linear_chooseVideo"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/post_video"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:text="Select video"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+ </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/camera_gallery_vid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:ignore="WebViewLayout">
+
+
+            <ImageView
+                android:id="@+id/camera_gallery_video"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:src="@drawable/viewpagerbackground"
+                />
+
+            <ImageView
+                android:id="@+id/play_bt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/circular_play_button" />
+
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:id="@+id/video_url"
+                android:hint="Video URL *"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:id="@+id/EmbeddedVideo"
+                android:hint="Enter Embed Code *"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border_stroke"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:popupBackground="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/dropdown" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border_stroke"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/industry_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:popupBackground="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/dropdown" />
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+        android:textColor="@color/colorBlack"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:text="Star Cast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TableLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <Spinner
+                android:id="@+id/designation"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:textAllCaps="false"
+                android:text="Director "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="false"
+                android:padding="5dp"
+                android:background="@drawable/border_stroke"
+                android:hint=" Name"
+                android:layout_weight="1"
+                 android:id="@+id/director"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/samatna_nine"
+                android:id="@+id/img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+            <TextView
+                android:id="@+id/photo1"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlue"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:text="Add photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Images_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scrollbars="horizontal"
+            android:visibility="gone" />
+        <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_marginTop="10dp"
+        android:rating="2.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginBottom="20dp"
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:text="Submit"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite" />
+    </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/progressBarHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:animateLayoutChanges="true"
+        android:background="#000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+
+    </FrameLayout>
+
+</LinearLayout>

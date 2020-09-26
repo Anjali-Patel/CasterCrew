@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AssistedFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
+            <!-- TODO: Update blank fragment layout -->
+            <Button
+                android:id="@+id/PAY_NOW"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/button_linear"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/get_invited"
+                android:padding="15dp"
+                android:text="PAY NOW"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/button_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:layout_width="180dp"
+                         android:id="@+id/bt1"
+                        android:layout_height="180dp"
+                        android:background="@drawable/package_button"
+                        android:text="Rs.23000\n Classic package"
+                        android:textAllCaps="false"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/bt2"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/package_blue_button"
+                        android:text="Rs.40000\n Classic Advantage"
+                        android:textAllCaps="false"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:layout_width="180dp"
+                        android:id="@+id/bt3"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/package_button"
+                        android:text="Rs.60000\n Classic Premium"
+                        android:textAllCaps="false"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/PAY_NOW"
+                android:layout_alignParentBottom="true"
+                android:background="#d3d3d3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="NEED HELP WITH\n PAYMENTS?"
+                    android:textSize="12sp" />
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/call_icon" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="9490009305"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                   android:id="@+id/chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/chat_icon" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="CHAT NOW"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/image"
+                android:text="Contact him through Phone/Message/Chat \n by upgrading!"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="ASSISTED -3 MONTHS"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Dedicated Relationship Manager who:"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="* Understands your expectations"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t4"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="* Handpicks profiles based on your preferences"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="* Facilities meeting between prospects"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/t1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="#d3d3d3" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/t6"
+                android:layout_marginTop="50dp"
+                android:background="#d3d3d3" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/men" />
+
+        </RelativeLayout>
+    </ScrollView>
+</ScrollView>

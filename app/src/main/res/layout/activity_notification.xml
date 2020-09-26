@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.NotificationActivity">
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:theme="@style/ToolbarTheme"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorLightBlue"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <!--<ImageView-->
+            <!--android:id="@+id/back_button"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:src="@drawable/ic_arrow_back_black_24dp"-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp" />-->
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="17dp"
+                android:text="Notifications"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/enable_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:padding="17dp"
+                android:text="Enable All"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"
+                android:text="Member Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:text="If you turn these off,you won't be notified of any member's \n activity on your profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textAllCaps="false"
+                        android:text="Phone Number Views "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:padding="5dp"
+
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:text="Phone Number Views "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Switch
+                    android:layout_gravity="center"
+
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/phone_number_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:textOff="OFF"
+                    android:textOn="ON"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textAllCaps="false"
+                        android:text="Requests "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:padding="5dp"
+
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:text="When members  requests for your information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Switch
+
+                    android:layout_gravity="center"
+
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:textOff="OFF"
+                    android:textOn="ON"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textAllCaps="false"
+                        android:text="Shortlists"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginBottom="10dp"
+
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:text="When members shortlist you "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Switch
+                    android:layout_gravity="center"
+
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/shortlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:textOff="OFF"
+                    android:textOn="ON"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textAllCaps="false"
+                        android:text="Chats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:text="When members are online or initiate chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Switch
+                    android:layout_gravity="center"
+
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/chats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:textOff="OFF"
+                    android:textOn="ON"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textAllCaps="false"
+                        android:text="Profile Views "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:padding="5dp"
+
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:text="When members view your profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Switch
+                    android:layout_gravity="center"
+
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/profile_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:textOff="OFF"
+                    android:textOn="ON"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/more_alerts"
+                android:textColor="@color/colorRed"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:text="More Alerts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:text="Matches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:padding="5dp"
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:text="If you turn these off,you might miss out on our recommendations based on your preferences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textAllCaps="false"
+                        android:text="New Matches"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:padding="5dp"
+
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:text="Everyday "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Switch
+                    android:layout_gravity="center"
+
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/new_matches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:textOff="OFF"
+                    android:textOn="ON"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textAllCaps="false"
+                        android:text="Daily Recommendations"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:padding="5dp"
+
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:text="Everyday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Switch
+                    android:layout_gravity="center"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/daily_recommendation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:textOff="OFF"
+                    android:textOn="ON"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textAllCaps="false"
+                        android:text="Based on your activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:padding="5dp"
+
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:text="Get notified about profiles similar to the ones you like "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Switch
+                    android:layout_gravity="center"
+
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/based_onactivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:textOff="OFF"
+                    android:textOn="ON"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/other_settings"
+                android:textColor="@color/colorRed"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:text="Other Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/premium"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:text="Premium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/premium_description"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:text="If you turn these off,you might miss out on offers &amp; promotions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:visibility="gone"
+
+                android:id="@+id/linear_membership"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textAllCaps="false"
+                        android:text="Membership Offers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:padding="5dp"
+
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:text="Packages,Discounts,etc "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Switch
+                    android:layout_gravity="center"
+
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/switch9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:textOff="OFF"
+                    android:textOn="ON"/>
+            </LinearLayout>
+            <View
+                android:visibility="gone"
+                android:id="@+id/membership_view"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#047AF8</color>-->
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#1F2DAA</color>
+   <!-- <color name="colorAccent">#D81B60</color>-->
+
+    <color name="colorTransparent">#0010bef9</color>
+    <color name="colorBackgroundTransparent">#80000000</color>
+
+    <color name="primary_color">@color/colorAppTheme</color>
+    <!--50%-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorAppTheme">#7EAB36</color>
+    <color name="colorPurple">#BA55D3</color>
+    <color name="colorLightSkyBlue">#79B9E1</color>
+    <color name="colorLightrange">#fed8b1</color>
+    <color name="colorLightBlue">#03A9F4</color>
+
+    <color name="colorGreen">#57ae57</color>
+    <color name="colorGrey">#9E9E9E</color>
+    <color name="colorBlue">#2196F3</color>
+    <color name="colorIndigo">#3F51B5</color>
+    <color name="colorBlueGrey">#607D8B</color>
+    <color name="colorRed">#f93939</color>
+    <color name="colorOrange">  #F5B041</color>
+
+    <color name="colorYellow">#f5c35d</color>
+    <color name="colorGradient">#75000000</color>
+    <color name="colorSubheading">#DE000000</color>
+    <color name="colorDarkSecondaryText">#8A000000</color>
+    <color name="colorBlack">#000000</color>
+
+
+</resources>

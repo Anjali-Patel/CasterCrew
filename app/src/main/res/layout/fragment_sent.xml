@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SentFragment">
+    <TextView
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="2 Sent Communications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/awaiting_reply"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="Awaiting Reply"
+                android:textAllCaps="false"
+                android:background="@drawable/button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/seen_by_him"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_back"
+                android:textAllCaps="false"
+               android:text="Seen By Him"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/not_seenby_him"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+               android:text="Not seen by him"
+                android:background="@drawable/button_back"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+</LinearLayout>

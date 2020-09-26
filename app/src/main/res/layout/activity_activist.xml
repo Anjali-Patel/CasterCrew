@@ -1,0 +1,385 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<androidx.appcompat.widget.Toolbar-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:theme="@style/ToolbarTheme"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?actionBarSize"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:background="@drawable/app_gradient"-->
+        <!--app:contentInsetLeft="0dp"-->
+        <!--app:contentInsetStart="0dp"-->
+        <!--app:contentInsetStartWithNavigation="0dp">-->
+
+
+        <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+            <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;<ImageView&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:id="@+id/back_button"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:src="@drawable/ic_arrow_back_black_24dp"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_width="35dp"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_height="35dp" />&ndash;&gt;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textAllCaps="false"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/toolbar_title"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:padding="17dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="What are you offering?"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="16sp" />&ndash;&gt;-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/enable_all"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:gravity="end"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:padding="17dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Enable All"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="14sp" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+    <!--</androidx.appcompat.widget.Toolbar>-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorLightBlue"
+        app:popupTheme="@style/AppTheme.NoActionBar" >
+
+    </androidx.appcompat.widget.Toolbar>
+<View
+    android:background="@color/colorGrey"
+    android:layout_height="1dp"
+    android:layout_width="match_parent"/>
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/img_audios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/audio"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/text_audios"
+                android:text="Audios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorGrey"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/img_news"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/news_blue"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/text_news"
+                android:text="News"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+
+                android:background="@color/colorGrey"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/img_reviews"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/rating_purple"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/text_reviews"
+                android:text="Reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+
+                android:background="@color/colorGrey"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/feed"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/feed_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/text_feed"
+                android:text="Feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+
+                android:background="@color/colorGrey"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:background="@color/colorGrey"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/img_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/video"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/text_videos"
+                android:text="Videos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorGrey"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/img_auditions"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/audition_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/text_auditions"
+                android:text="Auditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="10dp"
+
+                android:background="@color/colorGrey"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/img_post_talent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/talent_icon"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:textAllCaps="false"
+                android:text="Post Talent"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+
+                android:background="@color/colorGrey"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="10dp"
+
+                android:background="@color/colorGrey"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_below="@+id/toolbar"-->
+        <!--android:padding="20dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <!--<fr.ganfra.materialspinner.MaterialSpinner-->
+        <!--android:id="@+id/select_cat"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:drawablePadding="5dp"-->
+        <!--app:ms_hint="Select Category "-->
+        <!--app:ms_enableFloatingLabel="false"-->
+        <!--app:ms_enableErrorLabel="false"-->
+        <!--app:ms_floatingLabelText="floating label"-->
+        <!--app:ms_arrowSize="10dp"-->
+        <!--app:ms_multiline="false"-->
+        <!--app:ms_thickness="0dp"-->
+        <!--android:entries="@array/insti_cat"-->
+        <!--app:ms_alignLabels="false" />-->
+
+    <!--<com.google.android.material.textfield.TextInputLayout-->
+        <!--android:layout_below="@id/role"-->
+        <!--android:id="@+id/a_t"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/et_title"-->
+            <!--android:hint="Title *"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+    <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--<com.google.android.material.textfield.TextInputLayout-->
+        <!--android:layout_below="@id/a_t"-->
+        <!--android:id="@+id/a_s"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/et_since"-->
+            <!--android:hint="Since *"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+    <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--<com.google.android.material.textfield.TextInputLayout-->
+        <!--android:id="@+id/a_m"-->
+        <!--android:layout_below="@id/a_s"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/et_mobile"-->
+            <!--android:hint="Mobile *"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+    <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--<com.google.android.material.textfield.TextInputLayout-->
+        <!--android:id="@+id/s_d"-->
+        <!--android:layout_below="@id/a_m"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/et_short_des"-->
+            <!--android:hint="Short Description *"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+    <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+    </LinearLayout>
+
+

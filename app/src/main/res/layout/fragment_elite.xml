@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.EliteFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/t1"
+        android:padding="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ELITE  MATRIMONY" />
+    <TextView
+        android:layout_below="@+id/t1"
+        android:id="@+id/t2"
+        android:padding="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" * Exclusive matching service for the Elite" />
+    <TextView
+        android:layout_below="@+id/t2"
+        android:padding="20dp"
+        android:id="@+id/t3"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="* Selectively chosen affluent matches" />
+    <TextView
+        android:id="@+id/t4"
+        android:layout_below="@+id/t3"
+        android:padding="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="* Service that upholds privacy" />
+    <Button
+        android:padding="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/get_invited"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="bottom"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:text="Get Invited"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="bottom"
+        android:background="@drawable/get_invited"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+</RelativeLayout>
+</RelativeLayout>

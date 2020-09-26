@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="#E5E8E8"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:id="@+id/image_view"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/men"
+            android:layout_height="70dp"/>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:id="@+id/name"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorOrange"
+            android:text="Neetesh Kumar "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:singleLine="true"
+        android:id="@+id/contact_description"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Contact Neetesh Kumar  on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+      android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/call_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:textSize="18sp"
+            android:layout_gravity="center"
+         android:layout_marginLeft="5dp"
+            android:text="+91 9583XXXXXX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+    <TextView
+    android:layout_gravity="center"
+  android:gravity="center"
+    android:layout_marginTop="8dp"
+    android:text="Upgrade now to view his phone number "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <Button
+
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+     android:layout_gravity="center"
+        android:paddingEnd="0dp"
+        android:background="@drawable/upgrade_subscription"
+        android:id="@+id/upgrade"
+        android:textSize="14sp"
+        android:text="UPGRADE NOW "
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/iv_image"/>
+</LinearLayout>

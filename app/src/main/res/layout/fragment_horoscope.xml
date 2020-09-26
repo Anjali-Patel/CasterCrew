@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HoroscopeFragment">
+<TextView
+    android:layout_marginTop="200dp"
+    android:textSize="16sp"
+    android:layout_gravity="center"
+    android:textAllCaps="false"
+    android:text="Find profiles matching your horoscope"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+ <Button
+     android:layout_marginTop="20dp"
+     android:textSize="16sp"
+     android:layout_gravity="center"
+     android:padding="15dp"
+     android:textColor="@color/colorWhite"
+     android:textAllCaps="false"
+     android:text="Add Horoscope"
+     android:background="@drawable/upgrade_subscription"
+     android:layout_width="wrap_content"
+     android:layout_height="50dp" />
+
+</LinearLayout>
